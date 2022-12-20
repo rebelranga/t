@@ -1,0 +1,113 @@
+ 
+   *{ 
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "customfont";
+}
+
+@font-face{
+    font-family: "customfont";
+    src:url("https://post.healthline.com/wp-content/uploads/2020/08/coffee-worlds-biggest-source-of-antioxidants-1296x728-feature_0-732x549.jpg");
+}
+
+.page{
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Cover {
+    background-color: rgb(130, 129, 138);
+    width: 70em;
+    height: 35em;
+    background-image: url(https://images.travelandleisureindia.in/wp-content/uploads/2022/02/17145628/Coffee-shops-in-Delhi.jpg?tr=w-1200,h-900);
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(186, 8, 8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.alt-login{
+    width: 80%;
+    height: 3em;
+    display: flex;
+    justify-content: space-around;
+}
+ 
+.alt-login div{
+    width: 45%;
+    height: 90%;
+    border-radius: 0.25em;
+    background-color: rgb(222, 220, 220);
+    background-position: center;
+    background-size: contain ;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.google {background-image: url("https://pbs.twimg.com/profile_images/1455185376876826625/s1AjSxph_400x400.jpg");}
+.facebook {background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/640px-Facebook_f_logo_%282021%29.svg.png");}
+
+
+input {
+    border: none;
+    background-color:white;
+    height: 4em;
+    width: 80%;
+    border-radius: 0.25em;
+    text-align: center;
+    padding: 2em;
+}
+
+input:focus {
+    outline-color: rgb(19, 40, 202);
+
+}
+
+.login-btn {
+    width: 40%;
+    height: 3em;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: 0.5s;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+.login-btn:hover { transform: scale(1.25);}
+
+.text {
+    position: relative;
+    bottom: 2em;
+}
+
+.hide{
+    position: absolute;
+    transform: scale(0);
+
+}
+
+.login-popup {
+    position: absolute;
+    height: 30em;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25;
+    background-color: rgb(199, 29, 43);
+    color: white;
+    bottom: 0;
+    transform: scale(1);
+    transition: 1.5s;
+}
